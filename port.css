@@ -6,6 +6,10 @@
     font-family: "Lora", serif;
 }
 
+*:focus {
+    outline: none;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -54,8 +58,8 @@
     margin: 0 auto;
     text-align: center;
     font-family: 'Lora', sans-serif;
-    font-size: 1.5rem;
-    line-height: 1.5;
+    font-size: 1.25rem;
+    line-height: 1.25;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,17 +80,9 @@
     color: #000;
 }
 
-.arrow {
-    width: 100%;
-    height: auto;
-}
 
 .down-arrow {
-    font-size: 3rem;
-    position: absolute;
-    top: 90vh;
-    transform: translateY(-100%);
-    width: 80vw;
+    display: none;
 }
 
 .port-item {
@@ -97,6 +93,7 @@
     justify-content: center;
     box-shadow: 5px 5px 10px 5px rgba(0,0,0, .1);
     margin: 50px auto;
+    padding: 10px;
 }
 
 
@@ -149,10 +146,17 @@
     margin: 0 5px;
 }
 
-.closeDiv {
-    width: 100%;
-    margin: 10px;
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.close {
+    width: 20%;
     text-align: right;
+    float: right;
+    font-size: 1.25rem;
 }
 
 #moreInfo-1,
@@ -235,7 +239,7 @@
 }
 
 .site {
-    border: 2px solid black;
+    
     color: black;
     background-color: white;
 }
@@ -245,8 +249,8 @@
     text-decoration: none;
     font-family: "Open Sans Condensed", sans-serif;
     display: block;
-    height: 40px;
-    width: 120px;
+    height: 100%;
+    width: 100%;
 }
 
 .site a {
@@ -254,8 +258,10 @@
     text-decoration: none;
     font-family: "Open Sans Condensed", sans-serif;
     display: block;
-    height: 40px;
-    width: 120px;
+    height: 100%;
+    width: 100%; 
+    outline: 2px solid black; 
+    outline-offset: -2px;
 }
 
 .source:active,
@@ -286,6 +292,14 @@ figcaption {
 
 @media (min-width: 800px) {
 
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .port-item {
+        padding: 0;
+    }
+
     #moreInfo-1,
     #moreInfo-2 {
         display: none;
@@ -314,7 +328,18 @@ figcaption {
     .text {
         width: 50%;
     }
-
     
+    .down-arrow {
+        display: block;
+        font-size: 3rem;
+        position: absolute;
+        top: 90vh;
+        transform: translateY(-100%);
+        width: 80vw;
+    }
+
+    .close {
+        display: none;
+    }
 
 }
