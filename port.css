@@ -423,6 +423,10 @@ figcaption {
 
     /* --- CONTACT SECTION --- */
 
+    .mobile-nav {
+        display: none;
+    }
+
 .contact-wrapper {
     flex-direction: row;
 }
