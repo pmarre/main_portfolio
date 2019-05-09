@@ -299,12 +299,12 @@
   }
   
   .close {
-    width: 10%;
-    height: auto;
+    width: 90vw;
     text-align: center;
-    float: right;
     font-size: 2rem;
-    padding: 5px;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: right;
   }
   
   #moreInfo-1,
