@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // More Info Slider
     if ($(window).width() < 800) {
         $(document).click(function(e) {
             let target = e.target;
@@ -28,4 +29,21 @@ $(document).ready(function () {
             }
         });
     }
+
+// Mobile Menu Animations
+
+    $('.menu-stack').click(function(){
+        $('.mobile-overlay').css('display', 'block');
+    });
+    
+    $('.mobile-close').click(function(){
+        $('.mobile-overlay').css('display', 'none');
+    });
+
+    $('.mobile-navItem').click(function(){
+        $('.mobile-overlay').css('display', 'none');
+    });
+
+
+
 });

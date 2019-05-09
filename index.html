@@ -15,21 +15,31 @@
 </head>
 
 <body>
+    <div class="mobile-overlay">
+        <div class="mobile-close">&times;</div>
+            <nav class="mobile-menu">
+                    <a href="#" class="mobile-navItem">HOME</a>
+                    <a href="#portfolio" class="mobile-navItem">PORTFOLIO</a>
+                    <a href="#about" class="mobile-navItem">ABOUT</a>
+                    <a href="#contact" class="mobile-navItem">CONTACT</a>
+            </nav>
+    </div>
     <header>
-        <nav class="mobile-nav container">
+        <div class="mobile-nav container">
                 <span class="logo">PM</span>
                 <div class="menu-stack">
                   <div class="mobile-bar bar1"></div>
                   <div class="mobile-bar bar2"></div>
                   <div class="mobile-bar bar3"></div>
                 </div>
-        </nav>
+            </div>
+            
         <nav class="mainNav container">
             <span class="logo">PM</span>
             <div class="navigation">
                 <a href="#" class="navItem">HOME</a>
                 <a href="#portfolio" class="navItem">PORTFOLIO</a>
-                <!-- <a href="#" class="navItem">ABOUT</a> -->
+                <a href="#about" class="navItem">ABOUT</a>
                 <a href="#contact" class="navItem">CONTACT</a>
             </div>
         </nav>
@@ -48,9 +58,9 @@
             <a href="https://www.linkedin.com/in/patrickmarre" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
         <i class="fas fa-chevron-down down-arrow"></i>
-    </div>
-        
     
+        
+</div>
     </section>
     <section class="portfolio" id="portfolio">
         <div class="container">
@@ -90,7 +100,7 @@
     </section>
     <section id="contact" class="container">
         <div class="contact-wrapper">
-            <div class="about contact-flex-item">
+            <div id="about" class="about contact-flex-item">
                 
                 <h3>About Me</h3>
                 <div class="self-photo"></div>
@@ -163,7 +173,6 @@
             <h3>More Goals:</h3>
             <ul>
                 <li>Build with SASS</li>
-                <li>Location API using Google Maps</li>
                 <li>Responsive Layout</li>
             </ul>
             <div class="moreImg">
