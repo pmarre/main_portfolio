@@ -110,6 +110,15 @@
   width: 100%;
 }
 
+#chevron {
+  color: #000;
+}
+
+#chevron:hover {
+  cursor: pointer;
+  color: #fff04c;
+}
+
 .heading {
   width: 80vw;
   margin: 0 auto;
