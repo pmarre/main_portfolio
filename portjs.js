@@ -8,6 +8,7 @@ $(document).ready(function() {
       for (let i = 0; i < 15; i++) {
         console.log(target.id);
         if (target.id === 'sideBar-' + [i]) {
+          console.log(true);
           $('#moreInfo-' + [i]).slideDown(300);
         }
       }
