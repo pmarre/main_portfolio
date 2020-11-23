@@ -1,7 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function () {
+  addCard(projects);
   // More Info Slider
-
-  $(document).click(function(e) {
+  $(document).click(function (e) {
     let target = e.target;
     if (target.className === 'more_link') {
       e.preventDefault();
@@ -17,21 +17,21 @@ $(document).ready(function() {
     }
   });
 
-  $('.close').click(function() {
+  $('.close').click(function () {
     $('.moreInfo').slideUp(300);
   });
 
   // Mobile Menu Animations
 
-  $('.menu-stack').click(function() {
+  $('.menu-stack').click(function () {
     $('.mobile-overlay').css('display', 'block');
   });
 
-  $('.mobile-close').click(function() {
+  $('.mobile-close').click(function () {
     $('.mobile-overlay').css('display', 'none');
   });
 
-  $('.mobile-navItem').click(function() {
+  $('.mobile-navItem').click(function () {
     $('.mobile-overlay').css('display', 'none');
   });
 });
