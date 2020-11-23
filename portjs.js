@@ -15,6 +15,18 @@ $(document).ready(function () {
     } else if (target.className !== 'moreInfo') {
       $('.moreInfo').slideUp(300);
     }
+    if (target.className === 'job_title') {
+      $('.job_description').hide();
+      $('.job_title').removeClass('active-title');
+      $('.title-bg').removeClass('active-bg');
+      $('.job_description').removeClass('active-job');
+      $('#' + target.id).addClass('active-title');
+      $('#' + target.id + '-desc').addClass('active-job');
+      $('#' + target.id)
+        .children('div')
+        .addClass('active-bg');
+      $('#' + target.id + '-desc').show();
+    }
   });
 
   $('.close').click(function () {

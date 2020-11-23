@@ -25,6 +25,7 @@
       <div class="mobile-close">&times;</div>
       <nav class="mobile-menu">
         <a href="#" class="mobile-navItem">HOME</a>
+        <a href="#work" class="mobile-navItem">WORK HISTORY</a>
         <a href="#portfolio" class="mobile-navItem">PORTFOLIO</a>
         <a href="#about" class="mobile-navItem">ABOUT</a>
         <a href="#contact" class="mobile-navItem">CONTACT</a>
@@ -47,6 +48,7 @@
         <span class="logo">PM</span>
         <div class="navigation">
           <a href="#" class="navItem">HOME</a>
+          <a href="#work" class="navItem">WORK HISTORY</a>
           <a href="#portfolio" class="navItem">PORTFOLIO</a>
           <a href="#about" class="navItem">ABOUT</a>
           <a href="#contact" class="navItem">CONTACT</a>
@@ -73,10 +75,96 @@
             ><i class="fab fa-linkedin"></i
           ></a>
         </div>
-        <a href="#portfolio" id="chevron"><i class="fas fa-chevron-down down-arrow"></i></a>
+        <a href="#work" id="chevron"><i class="fas fa-chevron-down down-arrow"></i></a>
       </div>
     </section>
-    <section class="portfolio" id="portfolio"></section>
+    <section id="work" class="work">
+      <h1 class="work-title header">Work History</h1>
+      <div class="job-container">
+        <aside class="job_titles">
+          <ul class="job_title_list">
+            <li class="job_title active-title" id="wrike-comm">
+              <div class="title-bg active-bg"></div>
+              Communications Associate
+            </li>
+            <li class="job_title" id="wrike-recruiter">
+              <div class="title-bg"></div>
+              Recruiter
+            </li>
+            <li class="job_title" id="kpg-recruiter">
+              <div class="title-bg"></div>
+              Recruiter
+            </li>
+          </ul>
+        </aside>
+        <div class="job_description active-job" id="wrike-comm-desc">
+          <h2 class="company_name">Wrike</h2>
+          <small class="work_dates">05/2020 - Present</small>
+          <ul class="work_description">
+            <li>
+              Wrote daily social media messages for LinkedIn, Twitter, Facebook, and Instagram
+            </li>
+            <li>
+              Created weekly and monthly social media plans using Hootsuite and Wrike software
+            </li>
+            <li>Designed images for social posts using Canva and Photoshop</li>
+            <li>Daily engagement with followers through comments, questions, and posts</li>
+            <li>
+              Collaborated with Demand Generation, Event Marketing, and Product Marketing teams on
+              channel strategy for post relevant to their department
+            </li>
+          </ul>
+        </div>
+        <div class="job_description" id="wrike-recruiter-desc">
+          <h2 class="company_name">Wrike</h2>
+          <small class="work_dates">01/2020 - 05/2020</small>
+          <ul class="work_description">
+            <li>Full cycle recruiting for Marketing and Sales departments</li>
+            <li>Led recruiting efforts on roles from entry to executive level</li>
+            <li>Partnered with Marketing executives to align job and candidate expectations</li>
+            <li>
+              Utilized career sites (e.g. LinkedIn Recruiter, CareerBuilder, etc.) and Greenhouse
+              ATS to source inbound and outbound talent to generate robust pipeline for designated
+              positions
+            </li>
+            <li>
+              Handled all communication with candidates throughout hiring process which included
+              initial outreach, scheduling interviews, and extending and negotiating offers
+            </li>
+            <li>Optimized and developed hiring and sourcing strategy for key opportunities</li>
+          </ul>
+        </div>
+        <div class="job_description" id="kpg-recruiter-desc">
+          <h2 class="company_name">KPG Healthcare</h2>
+          <small class="work_dates">01/2017 - 01/2020</small>
+          <ul class="work_description">
+            <li>
+              Led 3-person team of Recruiting Assistants to train them in navigating various career
+              site databases to find qualified leads
+            </li>
+            <li>
+              Full cycle recruiting for all allied health role ranging from sterile processing to
+              physical therapy
+            </li>
+            <li>
+              Collaborated with various teams to build and design an online presence to attract
+              inbound applicants
+            </li>
+            <li>
+              Managed over 30 working contractors in various allied specialties all across the state
+              of California
+            </li>
+            <li>
+              Utilized career sites, social networks, and Bullhorn ATS to source inbound and
+              outbound candidates
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <h1 class="header">Portfolio</h1>
+    </section>
     <section id="contact" class="container">
       <div class="contact-wrapper">
         <div id="about" class="about contact-flex-item">
@@ -108,188 +196,9 @@
         </div>
       </div>
     </section>
-    <!-- SANDY'S PET SHOP -->
-    <section class="moreInfo container" id="moreInfo-1">
-      <div class="moreItem1">
-        <div class="close">&times;</div>
-        <h1>Sandy's Pet Shop</h1>
-        <div class="sourceBtns">
-          <button class="source">
-            <a href="https://github.com/pmarre/sandys_pet_shop" target="_blank">View Code</a>
-          </button>
-          <button class="site">
-            <a href="https://epizoan-respiration.000webhostapp.com/" target="_blank">View Site</a>
-          </button>
-        </div>
-        <p>
-          For this project, I was prompted to created a multipage website that connected to a MySQL
-          Database. Some of the features include forms submitted with AJAX, contact emails sent
-          using PHPMailer, and an admin page with a table of all clients who have submitted a
-          grooming form. The admin can add, update, and delete clients.
-        </p>
-        <h3>More Goals:</h3>
-        <ul>
-          <li>Fully functioning website</li>
-          <li>Location API using Google Maps</li>
-          <li>Responsive Layout</li>
-        </ul>
-        <figure class="moreImg">
-          <img src="Images/pet_shop_hp.png" alt="Sandy's Pet Shop Homepage" class="img" />
-          <figcaption>Sandy's Pet Shop Homepage</figcaption>
-        </figure>
-        <h1>Admin Page</h1>
-        <p>
-          The admin has the ability to view, update, delete, and add clients to table. This is
-          achieved using PHP, AJAX, SQL, and a Bootstrap Module.
-        </p>
-        <figure class="moreImg">
-          <img src="Images/pet_shop_admin.png" alt="Sandy's Pet Shop Admin Page" class="img" />
-          <figcaption>Sandy's Pet Shop Admin Page</figcaption>
-        </figure>
-        <h1>Google Maps API</h1>
-        <p>Used a Google Maps API to show the location of the [fictious] pet shop.</p>
-        <figure class="moreImg">
-          <img src="Images/pet_shop_location.png" alt="Sandy's Pet Shop Homepage" class="img" />
-          <figcaption>Sandy's Pet Shop Location Page</figcaption>
-        </figure>
-      </div>
-    </section>
-    <!-- PING. -->
-    <section class="moreInfo container" id="moreInfo-2">
-      <div class="moreItem2">
-        <div class="clearfix">
-          <div class="close">&times;</div>
-        </div>
-        <h1>PING.</h1>
-        <div class="sourceBtns">
-          <button class="source">
-            <a href="https://github.com/pmarre/PING/tree/master/PING" target="_blank">View Code</a>
-          </button>
-          <button class="site">
-            <a href="http://pmarre.com/Frontend_Mentor/PING/index.html" target="_blank"
-              >View Site</a
-            >
-          </button>
-        </div>
-        <p>
-          Project idea from
-          <a class="fem" href="https://beta.frontendmentor.io/" target="_blank">Frontend Mentor</a>.
-          Concept was to build a simple coming soon landing page with an form that catches invalid
-          emails and throws an error.
-        </p>
-        <h3>More Goals:</h3>
-        <ul>
-          <li>Build with SASS</li>
-          <li>Responsive Layout</li>
-        </ul>
-        <figure class="moreImg">
-          <img src="Images/ping_desktop.png" alt="Ping Desktop Page" class="img" />
-          <figcaption>Ping Desktop Homepage</figcaption>
-        </figure>
-        <h1>Catching Invalid Emails</h1>
-        <p>
-          I used some simple JQuery and a Regular Expression to test for invalid emails being
-          entered. If found, an error message appears
-        </p>
-        <figure class="moreImg">
-          <img src="Images/ping_desktop_error.png" alt="PING Desktop Page with Error" class="img" />
-          <figcaption>Ping Desktop with Error</figcaption>
-        </figure>
-        <figure class="moreImg">
-          <img src="Images/ping_mobile_error.png" alt="PING Mobile Page with Error" class="img" />
-          <figcaption>Ping Mobile Homepage with Error</figcaption>
-        </figure>
-      </div>
-    </section>
-    <!-- COUNTRY API -->
-    <section class="moreInfo container" id="moreInfo-3">
-      <div class="moreItem3">
-        <div class="clearfix">
-          <div class="close">&times;</div>
-        </div>
-        <h1>Country API</h1>
-        <div class="sourceBtns">
-          <button class="source">
-            <a href="https://github.com/pmarre/country_api" target="_blank">View Code</a>
-          </button>
-          <button class="site">
-            <a href="http://pmarre.com/Frontend_Mentor/CountryAPI/index.html" target="_blank"
-              >View Site</a
-            >
-          </button>
-        </div>
-        <p>
-          Project idea from
-          <a class="fem" href="https://beta.frontendmentor.io/" target="_blank">Frontend Mentor</a>.
-        </p>
-        <h3>More Goals:</h3>
-        <ul>
-          <li>Connect and display data from API</li>
-          <li>Dark Mode</li>
-        </ul>
-        <!-- <video autoplay muted loop id="countryAPI-video">
-        <source src="Videos/countryAPI_ui.mp4" /> 
-        </video> -->
-        <h1>Switching To Dark Mode</h1>
-        <p>I used JQuery and some CSS to toggle 'Dark Mode'.</p>
-        <figure class="moreImg">
-          <img src="Images/countryAPI-darkmode.png" alt="CountryAPI in dark mode" class="img" />
-          <figcaption>Webpage in dark mode.</figcaption>
-        </figure>
-        <h1>Searching For A Country</h1>
-        <figure class="moreImg">
-          <img src="Images/countryAPI-search.png" alt="Using the search function" class="img" />
-          <figcaption>Country API search for country.</figcaption>
-        </figure>
-      </div>
-    </section>
-    <!-- WELP -->
-
-    <section class="moreInfo container" id="moreInfo-4">
-      <div class="moreItem4">
-        <div class="close">&times;</div>
-        <h1>Welp</h1>
-        <div class="sourceBtns">
-          <button class="source">
-            <a href="https://github.com/pmarre/Welp" target="_blank">View Code</a>
-          </button>
-          <button class="site">
-            <a href="https://epizoan-respiration.000webhostapp.com/" target="_blank">View Site</a>
-          </button>
-        </div>
-        <p>
-          For this project, I was prompted to created a multipage website that connected to a MySQL
-          Database. Some of the features include forms submitted with AJAX, contact emails sent
-          using PHPMailer, and an admin page with a table of all clients who have submitted a
-          grooming form. The admin can add, update, and delete clients.
-        </p>
-        <h3>More Goals:</h3>
-        <ul>
-          <li>Fully functioning website</li>
-          <li>Location API using Google Maps</li>
-          <li>Responsive Layout</li>
-        </ul>
-        <figure class="moreImg">
-          <img src="Images/pet_shop_hp.png" alt="Sandy's Pet Shop Homepage" class="img" />
-          <figcaption>Sandy's Pet Shop Homepage</figcaption>
-        </figure>
-        <h1>Admin Page</h1>
-        <p>
-          The admin has the ability to view, update, delete, and add clients to table. This is
-          achieved using PHP, AJAX, SQL, and a Bootstrap Module.
-        </p>
-        <figure class="moreImg">
-          <img src="Images/pet_shop_admin.png" alt="Sandy's Pet Shop Admin Page" class="img" />
-          <figcaption>Sandy's Pet Shop Admin Page</figcaption>
-        </figure>
-        <h1>Google Maps API</h1>
-        <p>Used a Google Maps API to show the location of the [fictious] pet shop.</p>
-        <figure class="moreImg">
-          <img src="Images/pet_shop_location.png" alt="Sandy's Pet Shop Homepage" class="img" />
-          <figcaption>Sandy's Pet Shop Location Page</figcaption>
-        </figure>
-      </div>
-    </section>
+    <section class="moreInfo container" id="moreInfo-1"></section>
+    <section class="moreInfo container" id="moreInfo-2"></section>
+    <section class="moreInfo container" id="moreInfo-3"></section>
 
     <footer></footer>
     <script

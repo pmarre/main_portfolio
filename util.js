@@ -43,9 +43,9 @@ function buildPortfolioCard(data) {
         </p>
         <h3>More Goals:</h3>
         <ul>
-          <li>${project.easy_name}</li>
-          <li>${project.easy_name}</li>
-          <li>${project.easy_name}</li>
+          <li>${project.more_goals[0]}</li>
+          <li>${project.more_goals[1]}</li>
+          <li>${project.more_goals[2]}</li>
         </ul>
         <figure class="moreImg">
           <img src="${project.images[0][0]}" alt="${project.images[0][1]}" class="img" />
@@ -56,14 +56,14 @@ function buildPortfolioCard(data) {
         ${project.features[0][1]}
         </p>
         <figure class="moreImg">
-          <img src="Images/pet_shop_admin.png" alt="Sandy's Pet Shop Admin Page" class="img" />
-          <figcaption>Sandy's Pet Shop Admin Page</figcaption>
+        <img src="${project.images[1][0]}" alt="${project.images[1][1]}" class="img" />
+        <figcaption>${project.images[1][1]}</figcaption>
         </figure>
         <h1>${project.features[1][0]}</h1>
         <p>${project.features[1][1]}</p>
         <figure class="moreImg">
-          <img src="Images/pet_shop_location.png" alt="Sandy's Pet Shop Homepage" class="img" />
-          <figcaption>Sandy's Pet Shop Location Page</figcaption>
+        <img src="${project.images[2][0]}" alt="${project.images[2][1]}" class="img" />
+        <figcaption>${project.images[2][1]}</figcaption>
         </figure>
       </div>
     </section>
