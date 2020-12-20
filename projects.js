@@ -1,6 +1,44 @@
 let projects = {
   // fitness tracker app
   project0: {
+    name: 'bluebird_ski',
+    easy_name: 'Bluebird Ski Shop',
+    short_desc:
+      'A fully functioning website built with Django, featuring Stripe payments and Postgres database. Deployed using AWS S3 and Heroku.',
+    long_desc:
+      'A fully functioning website built with Django, featuring Stripe payments and Postgres database. Deployed using AWS S3 and Heroku.',
+    tech_used: [
+      'HTML',
+      'CSS',
+      'Python',
+      'Django',
+      'Bootstrap',
+      'Javascript',
+      'jQuery',
+      'Stripe',
+      'AWS S3',
+    ],
+    images: [
+      ['Images/bluebird/bluebird_hp.png', 'Bluebird Homepage Page'],
+      ['Images/bluebird/bluebird_product_detail.png', 'Bluebird Product Detail'],
+      ['Images/bluebird/bluebird_checkout.png', 'Bluebird Checkout Page'],
+    ],
+    github_link: 'https://github.com/pmarre/bluebird_ski/',
+    live_link: 'https://bluebird-ski-shop.herokuapp.com/',
+    more_goals: [
+      'Create a login/sign-up page',
+      'Build with Django framework',
+      'Use Stripe Payments',
+    ],
+    features: [
+      ['Product Page', 'Users can quickly view all details of the product and add to cart easily.'],
+      [
+        'Check Out Page',
+        'A clear checkout form for users to purchase services. Once purchase is confirmed, users recieve email with confirmation.',
+      ],
+    ],
+  },
+  project1: {
     name: 'fitness_tracker',
     easy_name: 'FitnessTracker',
     short_desc:
@@ -32,7 +70,7 @@ let projects = {
     ],
   },
   // scratch
-  project1: {
+  project2: {
     name: 'scratch',
     easy_name: 'Scratch',
     short_desc:
@@ -64,7 +102,7 @@ let projects = {
     ],
   },
   // jordan pipe's band
-  project2: {
+  project3: {
     name: 'jordan_pipes',
     easy_name: "Jordan Pipe's Band",
     short_desc: 'A responsive website built to showcase a fictional band.',
